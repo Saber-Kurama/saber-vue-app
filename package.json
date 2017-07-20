@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts":{
+    "saber-vue-app": "tasks/cra.sh",
+    "postinstall": "node bootstrap.js"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "husky": "^0.13.2",
+    "lerna": "2.0.0",
+    "lint-staged": "^3.3.1",
+    "prettier": "^1.5.2"
+  }
+}
