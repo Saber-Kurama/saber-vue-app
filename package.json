@@ -2,7 +2,8 @@
   "private": true,
   "scripts":{
     "saber-vue-app": "tasks/cra.sh",
-    "postinstall": "node bootstrap.js"
+    "postinstall": "node bootstrap.js",
+    "publish": "tasks/release.sh"
   },
   "devDependencies": {
     "eslint": "3.19.0",
