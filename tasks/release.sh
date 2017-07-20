@@ -33,6 +33,6 @@ cd "$root_path"
 # npm run build:prod
 # cd ../..
 # Go!
-#./node_modules/.bin/lerna publish --independent "$@" --force-publish
+./node_modules/.bin/lerna publish --independent "$@" 
 
-lerna publish --independent "$@"
+# lerna publish --independent "$@" 
