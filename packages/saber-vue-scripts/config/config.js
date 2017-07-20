@@ -8,7 +8,7 @@ function getBlueConfig() {
 
 let saberConfigDefaults = {
     build: {
-        env {
+        env:{
             NODE_ENV: '"production"'
         },
         assetsSubDirectory: 'static',
