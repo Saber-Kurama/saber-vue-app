@@ -13,7 +13,7 @@ let saberConfigDefaults = {
         },
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
-    }
+    },
     dev: {
         env: {
             NODE_ENV: '"development"'

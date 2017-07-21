@@ -12,6 +12,7 @@ module.exports = {
     appHTML: resolveApp('index.html'),
     appIndexJs: resolveApp('src/main.js'),
     appSrc: resolveApp('src'),
+    appTest: resolveApp('test'),
     appConfig: resolveApp('saber.config.js'),
     appNodeModules: resolveApp('node_modules'),
     appAssents: resolveApp('src/assets'),

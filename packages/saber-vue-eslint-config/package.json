@@ -1,0 +1,33 @@
+{
+    "name": "saber-vue-eslint-config",
+    "version": "0.0.0",
+    "description": "Eslint configuration used by saber vue",
+    "main": "./index.js",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "license": "MIT",
+    "keywords": [
+        "eslint",
+        "config",
+        "blue"
+    ],
+    "dependencies": {
+        "eslint": "^4.2.0",
+        "eslint-config-airbnb-base": "^11.2.0",
+        "eslint-config-elemefe": "^0.3.0",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-import-resolver-webpack": "^0.8.3",
+        "eslint-loader": "^1.9.0",
+        "eslint-plugin-html": "^3.1.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-vue": "^2.1.0",
+        "eslint-vue-js-fixer": "^1.0.7"
+    }
+}
