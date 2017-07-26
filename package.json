@@ -1,6 +1,6 @@
 {
   "private": true,
-  "scripts":{
+  "scripts": {
     "saber-vue-app": "tasks/cra.sh",
     "postinstall": "node bootstrap.js",
     "publish": "tasks/release.sh"
