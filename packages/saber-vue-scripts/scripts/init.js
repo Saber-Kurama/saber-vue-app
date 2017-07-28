@@ -97,7 +97,7 @@ module.exports = function (
         command = 'npm';
         args = ['install', '--save', verbose && '--verbose'].filter(e => e);
     }
-    args.push('react', 'react-dom');
+    
 
     // Install additional template dependencies, if present
     const templateDependenciesPath = path.join(
@@ -106,6 +106,7 @@ module.exports = function (
     );
 
     // 如果存在 .template.dependencies.json 文件
+    let hasDependencies = false;
     if (fs.existsSync(templateDependenciesPath)) {
         const templateDependencies = require(templateDependenciesPath).dependencies;
         args = args.concat(
@@ -113,12 +114,13 @@ module.exports = function (
                 return `${key}@${templateDependencies[key]}`;
             })
         );
+        hasDependencies = true
         fs.unlinkSync(templateDependenciesPath);
     }
 
     // 如果 package.json 有 
-    if (!isVueInstalled(appPackage) || template) {
-        console.log(`Installing react and react-dom using ${command}...`);
+    if (hasDependencies) {
+        console.log(`Installing  dependencies using ${command}...`);
         console.log();
 
         const proc = spawn.sync(command, args, {

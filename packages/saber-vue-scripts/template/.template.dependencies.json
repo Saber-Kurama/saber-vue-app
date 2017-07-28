@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "vuex": "^2.3.1",
+        "vuex-persistedstate": "^2.0.0",
+        "vuex-router-sync": "^4.2.0"
+    }
+}

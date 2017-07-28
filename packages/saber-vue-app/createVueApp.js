@@ -36,7 +36,7 @@ const program = new commander.Command(packageJson.name)
         console.log(
             `    A custom ${chalk.cyan('--scripts-version')} can be one of:`
         );
-        console.log(`      - a specific npm version: ${chalk.green('0.8.2')}`);
+        console.log(`      - a specific npm version: ${chalk.green('0.0.1')}`);
         console.log(
             `      - a custom fork published on npm: ${chalk.green(
         'my-vue-scripts'
@@ -44,20 +44,11 @@ const program = new commander.Command(packageJson.name)
         );
         console.log(
             `      - a .tgz archive: ${chalk.green(
-        'https://mysite.com/my-vue-scripts-0.8.2.tgz'
+        'https://mysite.com/my-vue-scripts-0.0.1.tgz'
       )}`
         );
         console.log(
             `    It is not needed unless you specifically want to use a fork.`
-        );
-        console.log();
-        console.log(
-            `    If you have any problems, do not hesitate to file an issue:`
-        );
-        console.log(
-            `      ${chalk.cyan(
-        ''
-        )}`
         );
         console.log();
     })
